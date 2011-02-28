@@ -8,6 +8,10 @@
 // 3g you would check that here.
 BOOL isCapable()
 {
+	if(![[NSFileManager defaultManager] fileExistsAtPath:@"/openiboot"]) {
+		return NO;
+	}
+	
 	return YES;
 }
 
@@ -34,12 +38,5 @@ void setState(BOOL Enable)
 // Amount of time spinner should spin in seconds after the toggle is selected.
 float getDelayTime()
 {
-	return 5.0f;
-}
-
-// Runs when the dylib is loaded. Only useful for debug. Function can be omitted.
-__attribute__((constructor)) 
-static void toggle_initializer() 
-{ 
-	NSLog(@"Initializing QuickBoot Toggle\n"); 
+	return 10.0f;
 }

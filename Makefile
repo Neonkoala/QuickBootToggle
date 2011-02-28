@@ -1,6 +1,6 @@
 CC=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin10-gcc-4.2.1
 LD=$(CC)
-LDFLAGS=-lobjc -dynamiclib -bind_at_load -F"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/PrivateFrameworks" -F"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks" -L"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/lib" -framework CoreTelephony -framework CoreFoundation -framework Foundation -framework UIKit -framework CoreGraphics -framework SystemConfiguration
+LDFLAGS=-lobjc -dynamiclib -bind_at_load -F"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/PrivateFrameworks" -F"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks" -L"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/lib" -framework CoreFoundation -framework Foundation -framework UIKit
 CFLAGS=-fconstant-cfstrings -std=gnu99 -Wall -O2 -F"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/PrivateFrameworks" -F"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks" -I"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include" -I..
 VERSION=1.0
 
