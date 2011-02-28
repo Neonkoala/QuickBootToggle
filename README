@@ -1,0 +1,6 @@
+QuickBootToggle - v0.1
+by Nick Dawson
+
+SBSettings Toggle for QuickBooting into iDroid. Fixed params at the moment but will be configurable with a new Bootlace.
+
+Includes check for OpeniBoot being installed to stop users of unsupported devices just rebooting their device then whining.
